@@ -1,13 +1,17 @@
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
-
 import { ProjectCard } from "./components/ProjectCard";
 import { DataProjectCard } from "./components/DataProjectCard";
 import { Contact } from "./components/Contact";
 import { FinanceProjectCard } from "./components/FinanceProjectCard";
 import { Stack } from "./components/Stack";
+import { LearningProjectCard } from "./components/LearningProjectCard";
 
-import { featuredProject, financeProject } from "./data/projects";
+import {
+  featuredProject,
+  financeProject,
+  learningProject,
+} from "./data/projects";
 import { dataProjects } from "./data/dataProjects";
 import { motion } from "framer-motion";
 
@@ -19,6 +23,7 @@ export default function App() {
       <main>
         <Stack />
 
+        {/* JobBoard */}
         <motion.section
           id="projects"
           className="scroll-mt-28 max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12 space-y-6"
@@ -36,11 +41,11 @@ export default function App() {
 
           <ProjectCard image={featuredProject.image} />
         </motion.section>
-        <br></br>
-        <br></br>
+
+        {/* Panel financiero */}
         <motion.section
           id="finance"
-          className="scroll-mt-24 max-w-6xl mx-auto px-4 sm:px-6 pb-10 sm:pb-12 space-y-4"
+          className="scroll-mt-28 max-w-6xl mx-auto px-4 sm:px-6 pb-10 sm:pb-12 space-y-6"
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -53,10 +58,27 @@ export default function App() {
           />
         </motion.section>
 
+        {/* Learning Platform */}
+        <motion.section
+          id="learning"
+          className="scroll-mt-28 max-w-6xl mx-auto px-4 sm:px-6 pb-10 sm:pb-12 space-y-6"
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.05 }}
+        >
+          <LearningProjectCard
+            image={learningProject.image}
+            demoUrl={learningProject.demoUrl}
+            frontendRepo={learningProject.frontendRepo}
+            backendRepo={learningProject.backendRepo}
+          />
+        </motion.section>
+
         {/* Otros proyectos */}
         <motion.section
           id="others"
-          className="scroll-mt-24 max-w-5xl mx-auto px-4 sm:px-6 pb-10 sm:pb-12"
+          className="scroll-mt-28 max-w-5xl mx-auto px-4 sm:px-6 pb-10 sm:pb-12"
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}

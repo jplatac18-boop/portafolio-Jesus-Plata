@@ -20,3 +20,4 @@ export const dataProjects = [
     href: "https://determined-menu-9e2.notion.site/An-lisis-Exploratorio-de-Datos-EDA-Ventas-de-Zara-2d7f5740ff7481aa951cea323b469802?source=copy_link",
   },
 ];
+

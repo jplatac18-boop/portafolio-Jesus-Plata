@@ -7,3 +7,10 @@ export const financeProject = {
   demoUrl: "https://finanzas-panel-local.vercel.app/",
   repoUrl: "https://github.com/jplatac18-boop/finanzas-panel-local",
 };
+
+export const learningProject = {
+  image: "/img/cap.png", 
+  demoUrl: "https://learning-platform-frontend-2ln5.onrender.com",
+  frontendRepo: "https://github.com/jplatac18-boop/learning-platform-frontend",
+  backendRepo: "https://github.com/jplatac18-boop/learning-platform-backend",
+};
