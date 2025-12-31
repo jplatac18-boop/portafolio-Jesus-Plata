@@ -1,4 +1,14 @@
 import { motion } from "framer-motion";
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiReactquery,
+  SiCypress,
+  SiGit,
+  SiGithub,
+  SiVercel,
+} from "react-icons/si";
 
 type FinanceProjectCardProps = {
   image: string;
@@ -13,6 +23,7 @@ export function FinanceProjectCard({
 }: FinanceProjectCardProps) {
   return (
     <motion.article
+      id="Panel financiero"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
@@ -41,28 +52,37 @@ export function FinanceProjectCard({
       {/* Contenido */}
       <div className="relative flex-1 px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
         <h3 className="text-xl md:text-2xl font-semibold mb-3">
-          Panel financiero personal multi‑moneda
+          Panel financiero
         </h3>
 
         {/* badges */}
         <div className="flex flex-wrap gap-2 mb-4 text-[0.7rem] font-medium">
-          <span className="px-2.5 py-1 rounded-full bg-sky-900/70 text-sky-200 border border-sky-500/60">
-            Next.js
+          <span className="px-2.5 py-1 rounded-full bg-sky-900/70 text-sky-200 border border-sky-500/60 inline-flex items-center gap-1.5">
+            <SiNextdotjs className="text-slate-100" /> Next.js
           </span>
-          <span className="px-2.5 py-1 rounded-full bg-sky-900/70 text-sky-200 border border-sky-500/60">
-            TypeScript
+          <span className="px-2.5 py-1 rounded-full bg-sky-900/70 text-sky-200 border border-sky-500/60 inline-flex items-center gap-1.5">
+            <SiTypescript className="text-sky-300" /> TypeScript
           </span>
-          <span className="px-2.5 py-1 rounded-full bg-sky-900/70 text-sky-200 border border-sky-500/60">
-            Tailwind CSS
+          <span className="px-2.5 py-1 rounded-full bg-sky-900/70 text-sky-200 border border-sky-500/60 inline-flex items-center gap-1.5">
+            <SiTailwindcss className="text-sky-300" /> Tailwind CSS
           </span>
-          <span className="px-2.5 py-1 rounded-full bg-emerald-900/70 text-emerald-200 border border-emerald-500/60">
-            TanStack Query
+          <span className="px-2.5 py-1 rounded-full bg-emerald-900/70 text-emerald-200 border border-emerald-500/60 inline-flex items-center gap-1.5">
+            <SiReactquery className="text-emerald-300" /> TanStack Query
           </span>
           <span className="px-2.5 py-1 rounded-full bg-emerald-900/70 text-emerald-200 border border-emerald-500/60">
             Zustand
           </span>
-          <span className="px-2.5 py-1 rounded-full bg-amber-900/70 text-amber-200 border border-amber-500/60">
-            Cypress
+          <span className="px-2.5 py-1 rounded-full bg-amber-900/70 text-amber-200 border border-amber-500/60 inline-flex items-center gap-1.5">
+            <SiCypress className="text-amber-300" /> Cypress
+          </span>
+          <span className="px-2.5 py-1 rounded-full bg-slate-900/70 text-slate-200 border border-slate-500/60 inline-flex items-center gap-1.5">
+            <SiGit className="text-orange-300" /> Git
+          </span>
+          <span className="px-2.5 py-1 rounded-full bg-slate-900/70 text-slate-200 border border-slate-500/60 inline-flex items-center gap-1.5">
+            <SiGithub className="text-slate-100" /> GitHub
+          </span>
+          <span className="px-2.5 py-1 rounded-full bg-slate-900/70 text-slate-200 border border-slate-500/60 inline-flex items-center gap-1.5">
+            <SiVercel className="text-slate-100" /> Vercel
           </span>
         </div>
 
@@ -74,14 +94,15 @@ export function FinanceProjectCard({
 
         <ul className="text-xs md:text-sm space-y-1.5 mb-5">
           <li>
-            <strong>Importación inteligente:</strong> carga archivos CSV o Excel (XLS/XLSX).
+            <strong>Importación inteligente:</strong> carga archivos CSV o Excel
+            (XLS/XLSX).
           </li>
           <li>
             <strong>Vistas dinámicas:</strong> filtros por mes, cuenta,
             categoría y conversión de moneda en tiempo real.
           </li>
           <li>
-            <strong>Calculos y alertas:</strong> proyección de cierre de mes y
+            <strong>Cálculos y alertas:</strong> proyección de cierre de mes y
             avisos si el gasto se desvía de lo planeado.
           </li>
           <li>

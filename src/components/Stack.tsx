@@ -1,18 +1,46 @@
 import { motion } from "framer-motion";
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiVite,
+  SiSass,
+  SiPython,
+  SiPostgresql,
+  SiJest,
+  SiCypress,
+  SiGit,
+  SiGithub,
+} from "react-icons/si";
 
-const categories = [
-  {
-    title: "Frontend",
-    items: ["HTML", "CSS", "JavaScript (ES6+)", "React", "TypeScript", "Vite", "Tailwind CSS"],
-  },
-  {
-    title: "Backend & Datos",
-    items: ["Python", "Django REST Framework", "PostgreSQL", "JWT Auth"],
-  },
-  {
-    title: "Testing & Otros",
-    items: ["Cypress", "Jest", "Testing Library", "Git", "Netlify", "Render"],
-  },
+type TechItem = {
+  name: string;
+  icon?: React.ReactNode;
+};
+
+const tech: TechItem[] = [
+  { name: "HTML", icon: <SiHtml5 className="text-orange-400" /> },
+  { name: "CSS", icon: <SiCss3 className="text-sky-400" /> },
+  { name: "JavaScript (ES6+)", icon: <SiJavascript className="text-yellow-300" /> },
+  { name: "Flexbox" },
+  { name: "CSS Grid" },
+  { name: "Sass / SCSS", icon: <SiSass className="text-pink-300" /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-300" /> },
+  { name: "React", icon: <SiReact className="text-sky-400" /> },
+  { name: "Next.js", icon: <SiNextdotjs className="text-slate-100" /> },
+  { name: "Vite", icon: <SiVite className="text-purple-300" /> },
+  { name: "Zustand" },
+  { name: "TanStack Query" },
+  { name: "Python", icon: <SiPython className="text-yellow-300" /> },
+  { name: "PostgreSQL", icon: <SiPostgresql className="text-sky-300" /> },
+  { name: "Jest", icon: <SiJest className="text-rose-300" /> },
+  { name: "Testing Library" },
+  { name: "Cypress", icon: <SiCypress className="text-emerald-300" /> },
+  { name: "Git", icon: <SiGit className="text-orange-300" /> },
+  { name: "GitHub", icon: <SiGithub className="text-slate-200" /> },
 ];
 
 export function Stack() {
@@ -25,39 +53,28 @@ export function Stack() {
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6 }}
     >
-      <p className="uppercase text-xs tracking-[0.15em] text-slate-300 mb-1">
-        Stack principal
-      </p>
       <h2 className="text-2xl font-semibold mb-4">
         Tecnologías con las que trabajo
       </h2>
       <p className="text-sm sm:text-base mb-6 max-w-2xl">
-        Este portafolio y el proyecto JobBoard están construidos con un stack
-        moderno orientado a desarrollo full‑stack: React + TypeScript en el
-        frontend.
+        Este portafolio y los proyectos destacados están construidos con un
+        stack moderno orientado a desarrollo web: React + TypeScript en el
+        frontend y Python + PostgreSQL en el backend, usando herramientas de
+        estado, datos y testing.
       </p>
 
-      <div className="grid gap-5 md:grid-cols-3">
-        {categories.map((cat) => (
-          <div
-            key={cat.title}
-            className="rounded-2xl bg-slate-900/70 border border-sky-700/40 p-4 shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
-          >
-            <h3 className="text-sm font-semibold mb-3 text-sky-200">
-              {cat.title}
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {cat.items.map((item) => (
-                <span
-                  key={item}
-                  className="px-2.5 py-1 rounded-full bg-slate-800 text-[0.7rem] text-slate-100 border border-slate-600"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
+      <div className="rounded-3xl bg-slate-900/70 border border-sky-700/40 p-5 sm:p-6 shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+        <div className="flex flex-wrap gap-3">
+          {tech.map((t) => (
+            <span
+              key={t.name}
+              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800 text-[0.75rem] text-slate-100 border border-slate-600"
+            >
+              {t.icon && <span className="text-base">{t.icon}</span>}
+              <span>{t.name}</span>
+            </span>
+          ))}
+        </div>
       </div>
     </motion.section>
   );

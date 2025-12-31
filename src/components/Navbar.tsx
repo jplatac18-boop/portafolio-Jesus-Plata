@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 
 const SECTIONS = [
-  { id: "about", label: "Sobre mí" },
   { id: "stack", label: "Stack" },
-  { id: "projects", label: "Proyecto JobBoard" },
+  { id: "projects", label: "JobBoard" },
+  { id: "finance", label: "Panel financiero" },
+  { id: "others", label: "Otros proyectos" },
   { id: "contact", label: "Contacto" },
 ];
+
 
 export function Navbar() {
   const [active, setActive] = useState<string | null>(null);

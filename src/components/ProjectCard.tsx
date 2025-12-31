@@ -1,4 +1,17 @@
 import { motion } from "framer-motion";
+import {
+  SiReact,
+  SiTypescript,
+  SiVite,
+  SiTailwindcss,
+  SiDjango,
+  SiPostgresql,
+  SiJsonwebtokens,
+  SiGit,
+  SiGithub,
+  SiVercel,
+  SiRender,
+} from "react-icons/si";
 
 type ProjectCardProps = {
   image: string;
@@ -55,26 +68,38 @@ export function ProjectCard({ image }: ProjectCardProps) {
 
         {/* badges de stack */}
         <div className="flex flex-wrap gap-2 mb-4 text-[0.7rem] font-medium">
-          <span className="px-2.5 py-1 rounded-full bg-sky-900/70 text-sky-200 border border-sky-500/60">
-            React
+          <span className="px-2.5 py-1 rounded-full bg-sky-900/70 text-sky-200 border border-sky-500/60 inline-flex items-center gap-1.5">
+            <SiReact className="text-sky-400" /> React
           </span>
-          <span className="px-2.5 py-1 rounded-full bg-sky-900/70 text-sky-200 border border-sky-500/60">
-            TypeScript
+          <span className="px-2.5 py-1 rounded-full bg-sky-900/70 text-sky-200 border border-sky-500/60 inline-flex items-center gap-1.5">
+            <SiTypescript className="text-sky-300" /> TypeScript
           </span>
-          <span className="px-2.5 py-1 rounded-full bg-sky-900/70 text-sky-200 border border-sky-500/60">
-            Vite
+          <span className="px-2.5 py-1 rounded-full bg-sky-900/70 text-sky-200 border border-sky-500/60 inline-flex items-center gap-1.5">
+            <SiVite className="text-purple-300" /> Vite
           </span>
-          <span className="px-2.5 py-1 rounded-full bg-sky-900/70 text-sky-200 border border-sky-500/60">
-            Tailwind CSS
+          <span className="px-2.5 py-1 rounded-full bg-sky-900/70 text-sky-200 border border-sky-500/60 inline-flex items-center gap-1.5">
+            <SiTailwindcss className="text-sky-300" /> Tailwind CSS
           </span>
-          <span className="px-2.5 py-1 rounded-full bg-emerald-900/70 text-emerald-200 border border-emerald-500/60">
-            Django REST
+          <span className="px-2.5 py-1 rounded-full bg-emerald-900/70 text-emerald-200 border border-emerald-500/60 inline-flex items-center gap-1.5">
+            <SiDjango className="text-emerald-300" /> Django REST
           </span>
-          <span className="px-2.5 py-1 rounded-full bg-emerald-900/70 text-emerald-200 border border-emerald-500/60">
-            PostgreSQL
+          <span className="px-2.5 py-1 rounded-full bg-emerald-900/70 text-emerald-200 border border-emerald-500/60 inline-flex items-center gap-1.5">
+            <SiPostgresql className="text-sky-300" /> PostgreSQL
           </span>
-          <span className="px-2.5 py-1 rounded-full bg-amber-900/70 text-amber-200 border border-amber-500/60">
-            JWT Auth
+          <span className="px-2.5 py-1 rounded-full bg-amber-900/70 text-amber-200 border border-amber-500/60 inline-flex items-center gap-1.5">
+            <SiJsonwebtokens className="text-amber-300" /> JWT Auth
+          </span>
+          <span className="px-2.5 py-1 rounded-full bg-slate-900/70 text-slate-200 border border-slate-500/60 inline-flex items-center gap-1.5">
+            <SiGit className="text-orange-300" /> Git
+          </span>
+          <span className="px-2.5 py-1 rounded-full bg-slate-900/70 text-slate-200 border border-slate-500/60 inline-flex items-center gap-1.5">
+            <SiGithub className="text-slate-100" /> GitHub
+          </span>
+          <span className="px-2.5 py-1 rounded-full bg-slate-900/70 text-slate-200 border border-slate-500/60 inline-flex items-center gap-1.5">
+            <SiVercel className="text-slate-100" /> Vercel
+          </span>
+          <span className="px-2.5 py-1 rounded-full bg-slate-900/70 text-slate-200 border border-slate-500/60 inline-flex items-center gap-1.5">
+            <SiRender className="text-sky-200" /> Render
           </span>
         </div>
 
@@ -82,7 +107,8 @@ export function ProjectCard({ image }: ProjectCardProps) {
           Plataforma de empleo con tres tipos de usuarios (candidato, empresa,
           admin) que permite publicar ofertas, postularse y moderar el contenido
           en tiempo real. Desarrollada con Django REST Framework, PostgreSQL,
-          React, TypeScript y Tailwind, desplegada en Render y Netlify.
+          React, TypeScript y Tailwind, desplegada con Vercel (frontend) y
+          Render (backend).
         </p>
 
         <ul className="text-xs md:text-sm space-y-1.5 mb-3">
@@ -95,7 +121,7 @@ export function ProjectCard({ image }: ProjectCardProps) {
           </li>
           <li>
             <strong>Infraestructura:</strong> Render (backend + base de datos),
-            Netlify (frontend)
+            Vercel (frontend)
           </li>
           <li>
             <strong>Base de datos:</strong> PostgreSQL gestionada en Render
