@@ -22,14 +22,7 @@ export default function App() {
       <Hero />
       <main>
         <Stack />
-        <motion.section>
-          <div className="flex flex-col items-center gap-2">
-            <h2 className="text-xl sm:text-2xl font-semibold tracking-[0.18em] uppercase text-slate-50">
-              Proyectos
-            </h2>
-            <div className="h-[1px] w-16 sm:w-24 bg-gradient-to-r from-transparent via-sky-400 to-transparent" />
-          </div>
-        </motion.section>
+
         {/* Panel financiero */}
         <motion.section
           id="finance"
@@ -39,6 +32,12 @@ export default function App() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6, delay: 0.05 }}
         >
+          <div className="flex flex-col items-center gap-2">
+            <h2 className="text-xl sm:text-2xl font-semibold tracking-[0.18em] uppercase text-slate-50">
+              Proyectos
+            </h2>
+            <div className="h-[1px] w-16 sm:w-24 bg-gradient-to-r from-transparent via-sky-400 to-transparent" />
+          </div>
           <FinanceProjectCard
             image={financeProject.image}
             demoUrl={financeProject.demoUrl}
