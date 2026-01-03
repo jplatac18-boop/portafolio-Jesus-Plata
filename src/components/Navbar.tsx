@@ -5,10 +5,10 @@ const SECTIONS = [
   { id: "projects", label: "JobBoard" },
   { id: "finance", label: "Panel financiero" },
   { id: "learning", label: "Learning Platform" },
+  { id: "hotel-booking", label: "Hotel Booking" }, // nueva sección
   { id: "others", label: "Otros proyectos" },
   { id: "contact", label: "Contacto" },
 ];
-
 
 export function Navbar() {
   const [active, setActive] = useState<string | null>(null);

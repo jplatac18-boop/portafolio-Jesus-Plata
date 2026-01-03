@@ -37,7 +37,6 @@ const tech: TechItem[] = [
   { name: "Python", icon: <SiPython className="text-yellow-300" /> },
   { name: "PostgreSQL", icon: <SiPostgresql className="text-sky-300" /> },
   { name: "Jest", icon: <SiJest className="text-rose-300" /> },
-  { name: "Testing Library" },
   { name: "Cypress", icon: <SiCypress className="text-emerald-300" /> },
   { name: "Git", icon: <SiGit className="text-orange-300" /> },
   { name: "GitHub", icon: <SiGithub className="text-slate-200" /> },

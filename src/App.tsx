@@ -6,11 +6,13 @@ import { Contact } from "./components/Contact";
 import { FinanceProjectCard } from "./components/FinanceProjectCard";
 import { Stack } from "./components/Stack";
 import { LearningProjectCard } from "./components/LearningProjectCard";
+import { HotelBookingCard } from "./components/HotelBookingCard";
 
 import {
   featuredProject,
   financeProject,
   learningProject,
+  hotelBookingProject,
 } from "./data/projects";
 import { dataProjects } from "./data/dataProjects";
 import { motion } from "framer-motion";
@@ -61,7 +63,7 @@ export default function App() {
           />
         </motion.section>
 
-                {/* JobBoard */}
+        {/* JobBoard */}
         <motion.section
           id="projects"
           className="scroll-mt-28 max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12 space-y-6"
@@ -70,8 +72,23 @@ export default function App() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6, delay: 0.05 }}
         >
-
           <ProjectCard image={featuredProject.image} />
+        </motion.section>
+
+        {/* Hotel Booking */}
+        <motion.section
+          id="hotel-booking"
+          className="scroll-mt-28 max-w-6xl mx-auto px-4 sm:px-6 pb-10 sm:pb-12 space-y-6"
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.05 }}
+        >
+          <HotelBookingCard
+            image={hotelBookingProject.image}
+            demoUrl={hotelBookingProject.demoUrl}
+            frontendRepo={hotelBookingProject.frontendRepo}
+          />
         </motion.section>
 
         {/* Otros proyectos */}
