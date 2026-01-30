@@ -34,10 +34,10 @@ export function ProjectCard({ image }: ProjectCardProps) {
       "
     >
       {/* banda/accent */}
-      <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-sky-400 via-sky-300 to-cyan-400" />
+      <div className="absolute inset-y-0 left-0 w-1 bg-linear-to-b from-sky-400 via-sky-300 to-cyan-400" />
 
       {/* Imagen */}
-      <div className="relative flex-1 min-h-[200px] sm:min-h-[240px] lg:min-h-[320px] overflow-hidden">
+      <div className="relative flex-1 min-h-50 sm:min-h-60 lg:min-h-80 overflow-hidden">
         <img
           src={image}
           alt="Captura de la plataforma JobBoard"
@@ -47,7 +47,7 @@ export function ProjectCard({ image }: ProjectCardProps) {
         <div
           className="
             pointer-events-none absolute inset-0 
-            bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent 
+            bg-linear-to-t from-slate-950/70 via-slate-950/20 to-transparent 
             opacity-0 group-hover:opacity-100 
             transition-opacity duration-500
           "
@@ -173,7 +173,7 @@ export function ProjectCard({ image }: ProjectCardProps) {
                 bg-sky-600 text-slate-900 text-xs md:text-sm font-medium 
                 border border-slate-200/80 
                 transition 
-                hover:bg-sky-400 hover:-translate-y-[1px] 
+                hover:bg-sky-400 hover:-translate-y-px 
                 active:translate-y-0 active:scale-[0.98]
                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-300/70
               "

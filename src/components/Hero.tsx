@@ -19,12 +19,12 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="px-4 sm:px-6 lg:px-8 py-10 sm:py-14 md:py-16 bg-gradient-to-br from-slate-800 via-sky-900 to-sky-700 text-slate-100"
+      className="px-4 sm:px-6 lg:px-8 py-10 sm:py-14 md:py-16 bg-linear-to-br from-slate-800 via-sky-900 to-sky-700 text-slate-100"
     >
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-center gap-8 sm:gap-10">
         {/* Columna foto */}
         <div className="flex flex-col items-center md:items-start gap-2 w-full md:w-1/3">
-          <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-[2px] border-sky-400 shadow-xl">
+          <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-sky-400 shadow-xl">
             <img
               src="/img/avatar.jpeg"
               alt="Foto de Jesús D. Plata Castro"

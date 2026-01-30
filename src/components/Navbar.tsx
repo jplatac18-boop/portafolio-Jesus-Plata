@@ -57,20 +57,20 @@ export function Navbar() {
         >
           <span
             className={`
-              absolute block h-[2px] w-4 rounded-full bg-sky-200 transition-transform duration-200
-              ${open ? "rotate-45 translate-y-[1px]" : "-translate-y-[4px]"}
+              absolute block h-0.5 w-4 rounded-full bg-sky-200 transition-transform duration-200
+              ${open ? "rotate-45 translate-y-px" : "-translate-y-1"}
             `}
           />
           <span
             className={`
-              absolute block h-[2px] w-4 rounded-full bg-sky-200 transition-opacity duration-150
+              absolute block h-0.5 w-4 rounded-full bg-sky-200 transition-opacity duration-150
               ${open ? "opacity-0" : "opacity-100"}
             `}
           />
           <span
             className={`
-              absolute block h-[2px] w-4 rounded-full bg-sky-200 transition-transform duration-200
-              ${open ? "-rotate-45 -translate-y-[1px]" : "translate-y-[4px]"}
+              absolute block h-0.5 w-4 rounded-full bg-sky-200 transition-transform duration-200
+              ${open ? "-rotate-45 -translate-y-px" : "translate-y-1"}
             `}
           />
         </button>
@@ -88,7 +88,7 @@ export function Navbar() {
               <span className="transition">{s.label}</span>
               <span
                 className={`
-                  absolute left-0 -bottom-1 h-[2px] bg-sky-300 transition-all
+                  absolute left-0 -bottom-1 h-0.5 bg-sky-300 transition-all
                   ${active === s.id ? "w-full" : "w-0 group-hover:w-full"}
                 `}
               />

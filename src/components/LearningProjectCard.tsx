@@ -28,10 +28,10 @@ export function LearningProjectCard({
       transition={{ duration: 0.7, ease: "easeOut" }}
       className="group relative flex flex-col lg:flex-row gap-5 sm:gap-6 bg-slate-900/80 border border-sky-700/60 rounded-3xl overflow-hidden shadow-[0_18px_40px_rgba(0,0,0,0.7)] transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_26px_70px_rgba(0,0,0,0.85)] max-w-6xl mx-auto"
     >
-      <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-sky-400 via-sky-300 to-cyan-400" />
+      <div className="absolute inset-y-0 left-0 w-1 bg-linear-to-b from-sky-400 via-sky-300 to-cyan-400" />
 
       {/* Imagen */}
-      <div className="relative flex-1 min-h-[200px] sm:min-h-[240px] lg:min-h-[320px] overflow-hidden">
+      <div className="relative flex-1 min-h-50 sm:min-h-60 lg:min-h-80 overflow-hidden">
         <img
           src={image}
           alt="Captura de la plataforma Learning Platform"
@@ -103,7 +103,7 @@ export function LearningProjectCard({
               href={link.href}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-sky-600 text-slate-900 text-xs md:text-sm font-medium border border-slate-200/80 transition hover:bg-sky-400 hover:-translate-y-[1px] active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-300/70"
+              className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-sky-600 text-slate-900 text-xs md:text-sm font-medium border border-slate-200/80 transition hover:bg-sky-400 hover:-translate-y-px active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-300/70"
             >
               {link.label}
             </a>
