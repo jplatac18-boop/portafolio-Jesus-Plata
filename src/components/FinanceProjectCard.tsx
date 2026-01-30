@@ -66,15 +66,6 @@ export function FinanceProjectCard({
           <span className="px-2.5 py-1 rounded-full bg-sky-900/70 text-sky-200 border border-sky-500/60 inline-flex items-center gap-1.5">
             <SiTailwindcss className="text-sky-300" /> Tailwind CSS
           </span>
-          <span className="px-2.5 py-1 rounded-full bg-emerald-900/70 text-emerald-200 border border-emerald-500/60 inline-flex items-center gap-1.5">
-            <SiReactquery className="text-emerald-300" /> TanStack Query
-          </span>
-          <span className="px-2.5 py-1 rounded-full bg-emerald-900/70 text-emerald-200 border border-emerald-500/60">
-            Zustand
-          </span>
-          <span className="px-2.5 py-1 rounded-full bg-amber-900/70 text-amber-200 border border-amber-500/60 inline-flex items-center gap-1.5">
-            <SiCypress className="text-amber-300" /> Cypress
-          </span>
           <span className="px-2.5 py-1 rounded-full bg-slate-900/70 text-slate-200 border border-slate-500/60 inline-flex items-center gap-1.5">
             <SiGit className="text-orange-300" /> Git
           </span>

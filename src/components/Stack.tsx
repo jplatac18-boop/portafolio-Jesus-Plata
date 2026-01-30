@@ -11,7 +11,7 @@ import {
   SiPython,
   SiPostgresql,
   // SiJest,
-  SiCypress,
+  // SiCypress,
   SiGit,
   SiGithub,
 } from "react-icons/si";
@@ -32,12 +32,12 @@ const tech: TechItem[] = [
   { name: "React", icon: <SiReact className="text-sky-400" /> },
   { name: "Next.js", icon: <SiNextdotjs className="text-slate-100" /> },
   { name: "Vite", icon: <SiVite className="text-purple-300" /> },
-  { name: "Zustand" },
-  { name: "TanStack Query" },
+  // { name: "Zustand" },
+  // { name: "TanStack Query" },
   { name: "Python", icon: <SiPython className="text-yellow-300" /> },
   { name: "PostgreSQL", icon: <SiPostgresql className="text-sky-300" /> },
   // { name: "Jest", icon: <SiJest className="text-rose-300" /> },
-  { name: "Cypress", icon: <SiCypress className="text-emerald-300" /> },
+  // { name: "Cypress", icon: <SiCypress className="text-emerald-300" /> },
   { name: "Git", icon: <SiGit className="text-orange-300" /> },
   { name: "GitHub", icon: <SiGithub className="text-slate-200" /> },
 ];
@@ -56,9 +56,7 @@ export function Stack() {
         Tecnologías con las que trabajo
       </h2>
       <p className="text-xs sm:text-sm md:text-base mb-5 sm:mb-6 max-w-2xl">
-        Este portafolio y los proyectos destacados están construidos con un
-        stack moderno orientado a desarrollo web, combinando herramientas para
-        la interfaz, la lógica de negocio, los datos y el testing.
+        Este portafolio y los proyectos destacados están construidos con el siguiente stack.
       </p>
 
       <div className="rounded-3xl bg-slate-900/70 border border-sky-700/40 p-4 sm:p-5 md:p-6 shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
