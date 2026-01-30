@@ -3,8 +3,8 @@ import {
   SiNextdotjs,
   SiTypescript,
   SiTailwindcss,
-  SiReactquery,
-  SiCypress,
+  // SiReactquery,
+  // SiCypress,
   SiGit,
   SiGithub,
   SiVercel,
@@ -31,16 +31,16 @@ export function FinanceProjectCard({
       className="group relative flex flex-col lg:flex-row gap-5 sm:gap-6 bg-slate-900/80 border border-emerald-600/60 rounded-3xl overflow-hidden shadow-[0_18px_40px_rgba(0,0,0,0.7)] transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_26px_70px_rgba(0,0,0,0.85)] max-w-6xl mx-auto"
     >
       {/* banda/accent */}
-      <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-emerald-400 via-emerald-300 to-teal-400" />
+      <div className="absolute inset-y-0 left-0 w-1 bg-linear-to-b from-emerald-400 via-emerald-300 to-teal-400" />
 
       {/* Imagen */}
-      <div className="relative flex-1 min-h-[200px] sm:min-h-[230px] lg:min-h-[320px] overflow-hidden">
+      <div className="relative flex-1 min-h-50 sm:min-h-57.5 lg:min-h-80 overflow-hidden">
         <img
           src={image}
           alt="Captura del panel financiero personal"
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
         />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-slate-950/70 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 text-[0.7rem] sm:text-xs font-medium text-slate-100">
             <p className="px-3 py-1 rounded-full bg-emerald-500/90 text-slate-900">
               Dashboard interactivo
@@ -112,7 +112,7 @@ export function FinanceProjectCard({
               href={link.href}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-emerald-500 text-slate-900 text-xs md:text-sm font-medium border border-slate-200/80 transition hover:bg-emerald-400 hover:-translate-y-[1px] active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70"
+              className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-emerald-500 text-slate-900 text-xs md:text-sm font-medium border border-slate-200/80 transition hover:bg-emerald-400 hover:-translate-y-px active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300/70"
             >
               {link.label}
             </a>
